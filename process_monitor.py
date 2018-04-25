@@ -1,7 +1,15 @@
 '''
+NOTE: the program using the Psutil library that should be installed first via 'pip' or other source that requering your system.
 Created on 24 Apr 2018
 
-@author: gal
+@authors: Gal , Mark , Noy
+Process_monitor can scan the system (Process that running in the background) and export two csv files:
+    1. process_list.csv - History of all processes that were cauch until now in format [pid Num, Name, Time, Status ]
+    2. Status_Log_File.csv - indication of processes that were closed/opened
+    
+The program still in Development.
+    our goals:
+         (*) expotring two encrypt files with GUI.
 '''
 import psutil
 from time import sleep
